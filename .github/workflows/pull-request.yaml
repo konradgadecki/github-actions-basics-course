@@ -1,6 +1,12 @@
 name: Pull Reqest example 
 
 on:
+  pull_request:
+    branches: 
+      - main
+    paths: #whitelist a set of files that we only want this to run where there is a change in that parcitular folder/files
+      - typescript-project/**
+
   workflow_dispatch: 
 
 jobs:
