@@ -19,6 +19,7 @@ jobs:
         with:
           node-version: "16.x"
           cache: "npm" # cache npm between jobs
+          cache-dependency-path: typescript-project/yarn.lock
         
       # Install yarn
       - name: Install Yarn
